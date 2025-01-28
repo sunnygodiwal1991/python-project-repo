@@ -31,6 +31,9 @@ pipeline {
                 script {
                     sh ''' 
                         sudo kubectl apply -f .
+                        sudo kubectl rollout restart deployment python-app
+                        sleep 15
+                        sudo kubectl get pods
                     '''
                 }
             }
