@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: python-app-container
-          image: nginx:latest  
+          image: 223733897421.dkr.ecr.ap-south-1.amazonaws.com/python-ecr-repo:latest  
           ports:
-            - containerPort: 80  
+            - containerPort: 80
